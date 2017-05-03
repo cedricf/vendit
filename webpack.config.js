@@ -8,11 +8,11 @@ module.exports = {
 	devtool: debug ? "inline-sourcemap" : null,
 	entry: "./resources/index",
 	output: {
-		path: path.join(__dirname, "/app/js/"),
-		filename: "bundle.js"
+		path: path.join(__dirname, "/app/"),
+		filename: "js/bundle.js"
 	},
 	devServer: {
-		publicPath: path.join(__dirname, '/app/js/')
+		publicPath: path.join(__dirname, '/app/')
 	},
 	devtool: debug ? "inline-sourcemap" : false,
 	plugins: debug ? [
