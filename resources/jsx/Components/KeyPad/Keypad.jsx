@@ -34,7 +34,7 @@ const Keypad = (props) => {
 						<div className="btn-group btn-group-keys">
 							<button className="btn btn-info btn-key-3" type="button">.</button>
 							<button className="btn btn-info btn-key-3" type="button">0</button>
-							<button className="btn btn-info btn-key-3" type="button">Qty</button>
+							<button className="btn btn-warning btn-key-3" type="button">Qty</button>
 						</div>
 					</div>
 			</div>
