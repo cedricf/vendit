@@ -1,6 +1,4 @@
-# React-Webpack-Bootstrap Boilerplate
-Start any web project with ease by using this React, Webpack, Bootstrap, and Babel boilerplate! With all the latest technologies already installed and perfectly configured, you can easily start developing your project without the hassle of getting it set up. 
-
+# Vendit
 
 ## Features
 - Webpack building system
@@ -19,8 +17,8 @@ Start any web project with ease by using this React, Webpack, Bootstrap, and Bab
 ## Installing
 Don't worry about the nightmare of setting up a React project with all these components! Simply run these three lines and start developing your awesome app.
 ```
-git clone https://github.com/petercunha/react-bootstrap-webpack-Boilerplate.git
-cd react-bootstrap-webpack-Boilerplate/
+git clone https://github.com/cedricf/vendit.git
+cd vendit/
 npm install
 ```
 
