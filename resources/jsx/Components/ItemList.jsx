@@ -1,6 +1,4 @@
 import React from 'react';
-import GroupTile from "./GroupTile.jsx";
-import Tile from "./Tile.jsx";
 
 import ItemManager from '../../js/ItemManager';
 
@@ -44,7 +42,9 @@ class ItemList extends React.Component {
             <div className="row">
               <div className="container-fluid my-container">
                   {this.state.groups.map(function(group, index) {
-                    return <GroupTile title={ group.name } key={group.groupCode} onClick={() => this.groupOnClick(index)}/>;
+                    return (<button type="button" className="btn btn-primary btn-lg btn-lg-group" onClick={() => this.groupOnClick(index)}>
+                          {group.name}
+                          </button>)
                   }, this)}
               </div>
             </div>
@@ -53,7 +53,11 @@ class ItemList extends React.Component {
             <div className="row">
               <div className="container-fluid my-container">
                   {this.state.groups[this.state.currentGroup].items.map(function(item, index){
-                    return <Tile title={ item.name } key={item.code} onClick={() => this.itemOnClick(index)}/>;
+                    return (
+                      <button type="button" className="btn btn-primary btn-lg btn-lg-item" onClick={() => this.itemOnClick(index)}>
+                      {item.name}
+                      </button>
+                    )
                   }, this)}
               </div>
             </div>
